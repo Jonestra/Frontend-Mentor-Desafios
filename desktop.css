@@ -1,0 +1,214 @@
+/*En este proyecto se implementaron varios enlaces CSS, no se aplico el selector @media razon por la cual existen 2 archivos CSS para la version mobile y desktop, este archivo tambien puede resumirse con un selector @media*/
+html,body {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 3rem 19.1rem;
+  background-color: var(--Rose100);
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone100: hsl(31, 53%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(32, 9.80%, 33.90%);
+  --Stone900: hsl(15, 4.30%, 18.00%);
+  --Brown800: hsl(14, 45.40%, 35.90%);
+  --Rose50: hsl(330, 100%, 98%);
+  --Rose100: hsl(329, 70%, 91%);
+  --Rose800: hsl(332, 51%, 32%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--White);
+  width: 60rem;
+  border-radius: 2rem;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 4rem;
+  margin-bottom: auto;
+
+  & .box__img {
+    width: 100%;
+    border-radius: 1.5rem;
+  }
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 2rem;
+
+  & .recipe__title {
+    font-family: "Young Serif", serif;
+    font-size: 3.14rem;
+    font-weight: 400;
+    color: var(--Stone900);
+    margin: 1rem 2rem;
+  }
+
+  & .recipe__description {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 1rem 4rem;
+    margin-left: 2rem;
+    color: var(--Stone600);
+  }
+}  
+
+.cooking-time {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Rose50);
+  margin: 0 4rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+
+  & .cooking-time__title {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: var(--Rose800);
+    margin-bottom: 1.5rem;
+    margin-left: 2rem;
+  }
+
+  & .cooking-time__list {
+    padding-left: 0;
+    padding-bottom: 1rem;
+
+    & .cooking-time__list-item {
+      font-family: "Outfit", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--Stone600);
+      padding-inline-start: 1rem;
+      margin: 0rem 7rem 1rem 4rem;
+    }
+
+    & .cooking-time__list-item::marker {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1.7rem;
+  border-bottom: 0.1rem solid var(--Stone150);
+  margin: 0 4rem;
+
+  & .ingredients__title {
+    font-family: "Young Serif", serif;
+    font-size: 2.1rem;
+    font-weight: 400;;
+    color: var(--Brown800);
+  }
+
+  & .ingredients__list {
+    padding-left: 0.5rem;
+
+    & .ingredients__list-item {
+      font-family: "Outfit", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: var(--Stone600);
+      padding-inline-start: 1rem;
+      margin: 0.9rem 2rem 0.2rem 1.7rem;
+    }
+
+    & .ingredients__list-item::marker {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.instructions { 
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid var(--Stone150);
+  margin: 1rem 4rem;
+
+  & .instructions__title {
+    font-family: "Young Serif", serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: var(--Brown800);
+    margin-top: 1rem;
+  }
+
+  & .instructions__list {
+    padding-left: 0rem;
+  
+    & .instructions__list-item {
+      font-family: "Outfit", sans-serif;
+      font-size: 1.2rem;
+      font-weight: 400;
+      line-height: 1.5rem;
+      color: var(--Stone600);
+      padding-inline-start: 1.1rem;
+      margin: 1rem 3rem;
+      margin-left: 2rem;
+    }
+
+    & .instructions__list-item::marker {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: var(--Brown800);
+    }
+  }
+}
+
+.nutrition {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 3rem;
+
+  & .nutrition__title {
+    font-family: "Young Serif", serif;
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: var(--Brown800);
+    margin: 0 1rem;
+  }
+
+  & .nutrition__description {
+    font-family: "Outfit", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 140%;
+    color: var(--Stone600);
+    margin: 1.5rem 1rem;
+  }
+
+  & .nutrition__table {
+    font-family: "Outfit", serif;
+    font-size: 1.3rem;
+    border-collapse: collapse; 
+    margin: 0 1rem;   
+  
+    & .nutrition__table-list-item1 {
+      color: var(--Stone600);
+      padding: 1.2rem 3rem;
+      padding-right: 0;
+    }
+
+    & .nutrition__table-list-item2 {
+      font-weight: bold;
+      color: var(--Brown800);
+      padding: 0 2rem;
+    }
+
+    & .nutrition__table-list:not(:last-child) {
+      border-bottom: 1px solid var(--Stone150);
+    }
+  }
+}
