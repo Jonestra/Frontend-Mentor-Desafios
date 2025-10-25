@@ -1,6 +1,6 @@
-# Frontend Mentor - Solución para la página de recetas
+# Frontend Mentor - Solución de diferentes proyectos
 
-Esta es una solución al [desafío de la página de recetas en Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
+Esta es una solución a los siguientes desafío [ página de recetas ](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
 
 ## Índice
 
