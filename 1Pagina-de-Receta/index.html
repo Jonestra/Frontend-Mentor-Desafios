@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omelette Recipe's</title>
+    <link href="./assets/images/favicon-32x32.png" rel="icon" type="image/png" sizes="32x32"/>
+    <!-- Se usan varios enlaces CSS para los diseños responsive, 
+    solo se uso en este proyecto para aprender a como implementarlo, 
+    hoy se usan las propiedades @media o @container para crear 
+    solo un archivo de CSS -->
+    <link href="./src/style.css" rel="stylesheet" media="screen and (min-width: 375px)"/>
+    <link href="./src/desktop.css" rel="stylesheet" media="screen and (min-width: 1366px) and (max-width: 2560px)"/>
+    <!-- Se usaron enlaces y links para implementar las fuentes, 
+    en vez de las referentes del proyecto que ya estan descargadas, 
+    esto con el fin de aprender a usarlas, para usar las fuentes descargadas 
+    debe hacerse por medio de la propiedad @fontface y aplicarla en una variable 
+    por medio de CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"/>
+  </head> 
+  <body>
+    <!-- Se uso en este proyecto la metodologia BEM y solo etiquetas semanticas -->
+    <main class="container">
+      <picture class="box">
+          <img class="box__img" src="./assets/images/image-omelette.jpeg" alt="omelette"/>
+      </picture>
+
+      <section class="recipe">
+        <h1 class="recipe__title">Simple Omelette Recipe</h1>
+        <p class="recipe__description">An easy and quick dish, perfect for any meal. 
+        This classic omelette combines beaten eggs cooked to perfection, 
+        optionally filled with your choice of cheese, vegetables, or meats.
+        </p>
+      </section>
+
+      <section class="cooking-time">
+        <h2 class="cooking-time__title">Preparation time</h2>
+        <ul class="cooking-time__list">
+            <li class="cooking-time__list-item"><strong>Total:</strong>Approximately 10 minutes</li>
+            <li class="cooking-time__list-item"><strong>Preparation:</strong> 5 minutes</li>
+            <li class="cooking-time__list-item"><strong>Cooking:</strong> 5 minutes</li>
+        </ul>
+      </section>
+
+      <section class="ingredients">
+        <h2 class="ingredients__title">Ingredients</h2>
+        <ul class="ingredients__list">
+            <li class="ingredients__list-item">2-3 large eggs</li>
+            <li class="ingredients__list-item">Salt, to taste </li>
+            <li class="ingredients__list-item">Pepper, to taste</li>
+            <li class="ingredients__list-item">1 tablespoon of butter or oil</li>
+            <li class="ingredients__list-item">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </section>
+
+      <section class="instructions">
+        <h2 class="instructions__title">Instructions</h2>
+        <ol class="instructions__list">
+            <li class="instructions__list-item"><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You  can add a tablespoon of water or milk for a fluffier texture.</li>
+            <li class="instructions__list-item"><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+            <li class="instructions__list-item"><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the     eggs evenly coat the surface.</li>
+            <li class="instructions__list-item"><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the    middle, sprinkle your chosen fillings over one half of the omelette.</li>
+            <li class="instructions__list-item"><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the fillings.   Let it cook for another minute, then slide it onto a plate.</li>
+            <li class="instructions__list-item"><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+      </section>
+
+      <section class="nutrition">
+        <h2 class="nutrition__title">Nutrition</h2>
+        <p class="nutrition__description">The table below shows nutritional values per serving without the additional fillings.</p>    
+        <table class="nutrition__table">
+            <tr class="nutrition__table-list">
+                <td class="nutrition__table-list-item1">Calories</td>
+                <td class="nutrition__table-list-item2">277kcal</td>
+            </tr>
+            <tr class="nutrition__table-list">
+                <td class="nutrition__table-list-item1">Carbs</td>
+                <td class="nutrition__table-list-item2">0g</td>
+            </tr>
+            <tr class="nutrition__table-list">
+                <td class="nutrition__table-list-item1">Protein</td>
+                <td class="nutrition__table-list-item2">20g</td>
+            </tr>
+            <tr class="nutrition__table-list">
+                <td class="nutrition__table-list-item1">Fat</td>
+                <td class="nutrition__table-list-item2">22g</td>
+            </tr>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
