@@ -1,6 +1,14 @@
 # Frontend Mentor - Solución de diferentes proyectos
 
-Esta es una solución a los siguientes desafío [ página de recetas ](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm).
+Esta es la solución a los siguientes desafíos 
+
+[ página de recetas ](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
+
+[ Social links profile ](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
+
+[ FAQ accordion ](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz)
+
+[ Results summary component ](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
 
 ## Índice
 
