@@ -1,0 +1,138 @@
+html {
+  font-size: 62.5%;
+  margin: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  --Green:hsl(75, 94%, 57%);
+  --White:hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 120px 30px;
+  background-color: var(--Grey900);
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  height: 630px;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  background-color: var(--Grey800);
+}
+
+.img-box {
+  display: flex;
+  margin-top: 20px;
+  
+  & .img-box__img {
+    width: 90px;
+    border-radius: 50px;
+  }
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  margin-bottom: 0;
+  
+  & .name__title {
+    margin: 3px;
+    font-size: 2.7rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--White);
+  }
+
+  & .name__adress {
+    margin: 9px;
+    font-size: 1.5rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--Green);
+  }
+
+  & .name__profession {
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    color: var(--White);
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  
+  & .social-media__container {
+    padding-left: 0;
+
+    & .social-media__element {
+      margin: 20px;
+      list-style-type: none;
+    
+      & .social-media__enlace {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 43px;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-optical-sizing: auto;
+        font-style: normal;
+        font-weight: 800;
+        text-decoration: none;
+        background-color: var(--Grey700); 
+        color: var(--White);
+      }
+
+      & .social-media__enlace:hover {
+        background-color: var(--Green);
+        color: var(--Grey800);
+        cursor: pointer;    
+      }
+    }
+  } 
+}
+/*En este proyecto se implemento el @media para la version desktop*/
+@media screen and (min-width: 1366px) {
+  
+  .container {
+  
+    & .sub-container {
+      width: 410px;
+      height: 630px;
+    }
+  }
+  
+  .social-media {
+
+    & .social-media__container {
+      width: 380px;
+    }  
+    
+    & .social-media__enlace {
+      padding: 0 33px;
+    }
+  }  
+}
