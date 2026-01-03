@@ -2,7 +2,7 @@
 
 Esta es la solución a los siguientes desafíos 
 
-[ página de recetas ](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
+[ Página de recetas ](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm)
 
 [ Social links profile ](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ)
 
